@@ -1,0 +1,179 @@
+/*
+* @Author: Administrator
+* @Date:   2017-06-28 15:11:31
+* @Last Modified by:   Chengx
+* @Last Modified time: 2017-07-05 09:07:50
+*/
+*{
+	/*通用选择器*/
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{
+	display: block;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	background:#fff ;
+	overflow: hidden;
+}
+.screen{
+	position: relative;
+}
+.screen img{
+	width: 100%;
+	height: auto;
+}
+.screen .let{
+	width: 0.53rem;
+	height: 0.77rem;
+	/* background-image: url('../img/A_Z/A.png'); */
+	background-size: 0.53rem 0.77rem;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 20;
+}
+.key{
+	width: 100%;
+	height: 5.4rem;
+	background-image: url('../img/Key.png');
+	background-size: 7.5rem 5rem;
+	padding-top: 0.2rem;
+}
+.key .letter-box{
+	width: 6.6rem;
+	height: 3.5rem;
+	background: rgba(0, 0, 0, 0.64);
+		/* css中颜色的表示方法：
+		1 red  blue ...
+		2 #ccc #fff 等等
+		3 rgb(0,0,0) 在这是0-255 红 绿 蓝
+		4 rgba(0,0,0,0) 透明度0-1
+		*/
+	margin: 0.3rem auto;
+	border-radius: 0.3rem;
+    padding: 0.5rem 0;
+}
+.key .letter-box .letter{
+	width: 0.5rem;
+	height: 0.8rem;
+	background-image: url('../img/Letter.png');
+	background-size: 0.5rem 0.8rem;
+	float: left;
+
+	font-size: 0.4rem;
+	text-align: center;
+	line-height: 0.8rem;
+	margin: 0.08rem 0.08rem;
+    box-shadow: 0rem 0rem 0.1rem 0.02rem #333;
+    /* box-shodow: x轴偏移量 y轴偏移量 阴影大小
+    阴影模糊程度  ; */
+}
+#life{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: absolute;
+	right: 0.5rem;
+	background-image: url('../img/Health.png');
+    background-size: 1.21rem 1.22rem;
+	top: 2rem;
+    
+    font-size: 0.5rem;
+    text-align: center;    
+     
+}
+#score{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: absolute;
+	right: 0.5rem;
+	background-image: url('../img/Point.png');
+    background-size: 1.21rem 1.22rem;
+	top: 3.7rem;
+    font-size: 0.45rem;
+    text-align: center;    
+   
+}
+.start{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: absolute;
+	right: 0.5rem;
+	background-image: url('../img/Play.png');
+    background-size: 1.21rem 1.22rem;
+	top: 5.5rem;
+    font-size: 0.5rem;
+    text-align: center;    
+    z-index: 10;
+}
+.pause{
+	width: 1.22rem;
+	height: 1.21rem;
+	position: absolute;
+	right: 0.5rem;
+	background-image: url('../img/Pause.png');
+    background-size: 1.21rem 1.22rem;
+	top: 5.5rem;
+    font-size: 0.5rem;
+    text-align: center; 
+}
+#box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	z-index: 99;
+}
+#son{
+	width: 4.3rem;
+	height: 5.21rem;
+	background-image: url('../img/gameover.png');
+	background-size: 4.30rem 5.21rem;
+	margin: 0.5rem auto;
+	position: relative;
+}
+#son .fenshu{
+	width: 0.7rem;
+	height: 0.4rem;
+	position: absolute;
+	top: 3.5rem;
+	left: 2.1rem;
+
+	font-size: 0.35rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 0.4rem;
+	}
+#son .btn{
+	width: 2.63rem;
+	height: 0.6rem;
+	background-image: url('../img/btn.png');
+	background-size:2.63rem 0.6rem;
+	position: absolute;
+	bottom:0.5rem;
+	left: 0rem;
+	right: 0;
+	margin: 0 auto;
+}
+.box2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.box3{
+	width: 0.5rem;
+	height: 0.5rem;
+	background-size: 0.5rem 0.5rem;
+	background-image: url('../img/yinyue.png');
+	position: absolute;
+	top :0.7rem;
+	right: 0.2rem;
+}
